@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <div class="bar">
+      <nav>
+        <div class="nav-left">
+          <a href="https://dumbways.id/" target="_blank">
+            <img src="assets/images/brandred.png" alt="dumbways" width="40px" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="project.html">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+    </div>
+    <form>
+      <h1>GET IN TOUCH</h1>
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" type="text" placeholder="Masukkan Nama Anda" />
+      </div>
+      <div>
+        <label for="input-email">Email</label>
+        <input
+          id="input-email"
+          type="email"
+          placeholder="Masukkan Alamat Email Anda"
+        />
+      </div>
+      <div>
+        <label for="input-no">Phone</label>
+        <input id="input-no" type="number" placeholder="Masukkan No.Hp Anda" />
+      </div>
+      <div>
+        <label for="subjek">Subject</label>
+        <select id="subjek">
+          <option value="" hidden>Select</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Fullstack</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Your message</label>
+        <textarea
+          id="message"
+          rows="5"
+          cols="10"
+          placeholder="Masukkan Pesan Anda"
+        ></textarea>
+      </div>
+      <div>
+        <button type="button" onclick="submitData()">Submit</button>
+      </div>
+    </form>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

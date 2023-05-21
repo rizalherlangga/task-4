@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.project {
+  width: 100%;
+  background-color: #e3e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-form {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
+form > h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.nama label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nama input {
+  margin-bottom: 20px;
+  width: 900px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+
+.tanggal {
+  display: flex;
+  gap: 15px;
+}
+
+.tanggal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tanggal input {
+  margin-bottom: 20px;
+  width: 432px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+
+.desc label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.desc textarea {
+  margin-bottom: 20px;
+  width: 900px;
+  height: 100px;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+
+.list > h2 {
+  margin-bottom: 30px;
+}
+.ak1 {
+  display: flex;
+  gap: 130px;
+}
+
+.ak1 label {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.ak1 input {
+  width: 30px;
+  height: 25px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+.ak2 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 175px;
+}
+
+.ak2 label {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.ak2 input {
+  width: 30px;
+  height: 25px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+
+.image label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image input {
+  width: 900px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 10px 8px 0px #ced2d5;
+  border: 1px solid #b4b0b0;
+}
+
+.submit {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.data {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.data-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.data-container > h1 {
+  text-align: center;
+}
+
+.kartu-t {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  justify-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #cbcbcb;
+  padding: 15px;
+}
+.project-card > img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+.project-card p {
+  margin-bottom: 13px;
+}
+
+.gambar {
+  margin-bottom: 10px;
+}
+
+.gambar i {
+  font-size: 25px;
+  width: 50px;
+}
+
+.ini-data {
+  width: 100%;
+}
+
+.ini-data button {
+  width: 49%;
+}

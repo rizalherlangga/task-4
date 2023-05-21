@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bar">
+      <nav>
+        <div class="nav-left">
+          <a href="https://dumbways.id/" target="_blank">
+            <img src="assets/images/brandred.png" alt="dumbways" width="40px" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="project.html">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+    </div>
+    <div class="project">
+      <div class="project-form">
+        <div class="project-container">
+          <form onsubmit="postProject(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div class="nama">
+              <label for="input-nama"><h2>Project Name</h2></label>
+              <input
+                type="text"
+                id="input-nama"
+                placeholder="masukan nama anda"
+              />
+            </div>
+            <div class="tanggal">
+              <div>
+                <label for="input-start"><h2>Start Date</h2></label>
+                <input type="date" id="input-start" />
+              </div>
+              <div>
+                <label for="input-end"><h2>End Date</h2></label>
+                <input type="date" id="input-end" />
+              </div>
+            </div>
+            <div class="desc">
+              <label for="input-deskripsi"><h2>Description</h2></label>
+              <textarea
+                id="input-deskripsi"
+                placeholder="masukkann deskripsi anda"
+              ></textarea>
+            </div>
+            <div class="list">
+              <h2>Technologies</h2>
+              <div class="ak1">
+                <div>
+                  <input type="checkbox" id="input-js" />
+                  <label for="input-js">JavaScript</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="input-bootstrap" />
+                  <label for="input-bootstrap">BootStrap</label>
+                </div>
+              </div>
+              <div class="ak2">
+                <div>
+                  <input type="checkbox" id="input-golang" />
+                  <label for="input-golang">Golang</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="input-react" />
+                  <label for="input-react">React JS</label>
+                </div>
+              </div>
+            </div>
+            <div class="image">
+              <label for="input-image"><h2>Upload Image</h2></label>
+              <input type="file" id="input-image" />
+            </div>
+            <div class="submit">
+              <button onclick="emptyFormAlert()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="data">
+      <div class="data-container">
+        <h1>MY PROJECT</h1>
+        <div id="kartu-t" class="kartu-t">
+          <div class="project-card">
+            <img src="assets/images/1.jpeg" alt="1" />
+            <h5>Dumbways Mobile App - 2021</h5>
+            <p class="durasi">durasi : 3 bulan</p>
+            <p class="deskripsi">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              provident non laudantium natus dolores libero optio. Quia ex modi
+              maxime.
+            </p>
+            <div class="gambar">
+              <i class="fa-brands fa-square-js fa-xl"></i>
+              <i class="fa-brands fa-bootstrap fa-xl"></i>
+              <i class="fa-brands fa-golang fa-xl"></i>
+              <i class="fa-brands fa-react fa-xl fa-fw"></i>
+            </div>
+            <div class="ini-data">
+              <button class="edit-button">edit</button>
+              <button class="delete-button">delete</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/1.jpeg" alt="1" />
+            <h5>Dumbways Mobile App - 2021</h5>
+            <p>durasi : 3 bulan</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              provident non laudantium natus dolores libero optio. Quia ex modi
+              maxime.
+            </p>
+            <div class="gambar">
+              <i class="fa-brands fa-square-js fa-xl"></i>
+              <i class="fa-brands fa-bootstrap fa-xl"></i>
+              <i class="fa-brands fa-golang fa-xl"></i>
+              <i class="fa-brands fa-react fa-xl fa-fw"></i>
+            </div>
+            <div class="ini-data">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/1.jpeg" alt="1" />
+            <h5>Dumbways Mobile App - 2021</h5>
+            <p>durasi : 3 bulan</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              provident non laudantium natus dolores libero optio. Quia ex modi
+              maxime.
+            </p>
+            <div class="gambar">
+              <i class="fa-brands fa-square-js fa-xl"></i>
+              <i class="fa-brands fa-bootstrap fa-xl"></i>
+              <i class="fa-brands fa-golang fa-xl"></i>
+              <i class="fa-brands fa-react fa-xl fa-fw"></i>
+            </div>
+            <div class="ini-data">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/1.jpeg" alt="1" />
+            <h5>Dumbways Mobile App - 2021</h5>
+            <p>durasi : 3 bulan</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              provident non laudantium natus dolores libero optio. Quia ex modi
+              maxime.
+            </p>
+            <div class="gambar">
+              <i class="fa-brands fa-square-js fa-xl"></i>
+              <i class="fa-brands fa-bootstrap fa-xl"></i>
+              <i class="fa-brands fa-golang fa-xl"></i>
+              <i class="fa-brands fa-react fa-xl fa-fw"></i>
+            </div>
+            <div class="ini-data">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/1.jpeg" alt="1" />
+            <h5>Dumbways Mobile App - 2021</h5>
+            <p>durasi : 3 bulan</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              provident non laudantium natus dolores libero optio. Quia ex modi
+              maxime.
+            </p>
+            <div class="gambar">
+              <i class="fa-brands fa-square-js fa-xl"></i>
+              <i class="fa-brands fa-bootstrap fa-xl"></i>
+              <i class="fa-brands fa-golang fa-xl"></i>
+              <i class="fa-brands fa-react fa-xl fa-fw"></i>
+            </div>
+            <div class="ini-data">
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/project.js"></script>
+  </body>
+</html>
