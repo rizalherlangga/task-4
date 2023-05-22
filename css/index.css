@@ -1,107 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
-
-.container {
-  width: 100%;
-  padding-top: 45px;
-  background-color: #e3e7eb;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: o;
+  text-decoration: none;
 }
 
-.container > h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
+body {
+  width: 100%;
+  background-color: #e3e7eb;
+  margin: 0;
+  padding: 0px;
 }
 
 .main {
-  width: 100%;
+  width: 1140px;
+  margin: 50px auto;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #cecece;
+  background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  width: 1200px;
-  display: flex;
-  align-items: center;
-  padding: 50px;
-}
-
-.card-right img {
-  width: 800px;
-}
-
-.card-left {
-  margin-left: 80px;
-  width: 400px;
-  height: 460px;
-  font-size: 20px;
-}
-
-.card-left > h6 {
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: black;
-}
-
-.date {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.clock {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.tc-1 {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  margin-bottom: 15px;
-}
-
-.tc-1 > .react {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.tc-1 > .node {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.tc-2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.tc-2 > .js {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.tc-2 > .io {
-  display: flex;
-  align-items: center;
-  gap: 5px;
 }
 
 .about {
+  width: 700px;
+}
+
+.Cv {
+  display: flex;
+  gap: 10px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: black;
+  font-weight: bold;
+}
+
+.img:hover {
+  color: orangered;
+}
+
+.logo {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 32px;
 }
 
-.isi {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+.card {
+  width: 300px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #cecece;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.isi p {
-  justify-content: center;
-  display: block;
+.card p {
+  text-align: center;
+  margin: 0;
+}
+
+.card h2 {
+  text-align: center;
+  margin: 0 0 5px 0;
 }

@@ -127,7 +127,7 @@ function renderPpc() {
     html += `
       <div class="project-card">
       <img src="${projectData[index].projectImage}" alt="1"/>
-      <a href="#">
+      <a href="project-detail.html">
           <h4>${projectData[index].projectName}</h4>
       </a>
       <p class="durasi">${projectData[index].projectStart} - ${projectData[index].projectEnd}</p>
