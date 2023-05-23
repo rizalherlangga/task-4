@@ -102,10 +102,18 @@ function postProject(event) {
   projectImage = URL.createObjectURL(projectImage[0]);
   console.log(projectImage);
 
+  let startDate = new Date(projectStart);
+  let endDate = new Date(projectEnd);
+
+  let differenceInTime = Math.abs(endDate - startDate);
+  let differenceInDay = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+
+  console.log(differenceInDay + " Hari");
+
   let projectPreviewCard = {
     projectName,
-    projectStart,
-    projectEnd,
+    projectStart: differenceInDay + " Hari",
+    projectEnd: differenceInDay + " Hari",
     projectDescription,
     jsIconDecide,
     bootstrapIconDecide,
@@ -130,7 +138,7 @@ function renderPpc() {
       <a href="project-detail.html" style="color: black">
           <h4>${projectData[index].projectName}</h4>
       </a>
-      <p class="durasi">${projectData[index].projectStart} - ${projectData[index].projectEnd}</p>
+      <p >${projectData[index].projectStart} - Rizal Herlangga</p>
       <p class="deskripsi">${projectData[index].projectDescription}</p>
       <div class="gambar">
           ${projectData[index].jsIconDecide}
