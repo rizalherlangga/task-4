@@ -119,7 +119,7 @@ function postProject(event) {
   if (days >= 8) {
     differenceInDay = week + " week";
   }
-  if (days >= 30) {
+  if (week >= 4) {
     differenceInDay = month + " month";
   }
   if (month >= 12) {
