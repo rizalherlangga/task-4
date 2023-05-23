@@ -105,15 +105,31 @@ function postProject(event) {
   let startDate = new Date(projectStart);
   let endDate = new Date(projectEnd);
 
-  let differenceInTime = Math.abs(endDate - startDate);
-  let differenceInDay = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+  let differenceInTime = (endDate - startDate) / 1000;
+  // let differenceInDay = differenceInTime / (1000 * 3600 * 24);
+  let year = Math.abs(Math.round(differenceInTime / (60 * 60 * 24) / 365.25));
+  let month = Math.abs(Math.round(differenceInTime / (60 * 60 * 24 * 7 * 4)));
+  let week = Math.abs(Math.round(differenceInTime / (60 * 60 * 24 * 7)));
+  let days = Math.abs(Math.round(differenceInTime / (3600 * 24)));
+  let differenceInDay = { year, month, week, days };
 
-  console.log(differenceInDay + " Hari");
+  if (days <= 7) {
+    differenceInDay = days + " days";
+  }
+  if (days >= 8) {
+    differenceInDay = week + " week";
+  }
+  if (days >= 30) {
+    differenceInDay = month + " month";
+  }
+  if (month >= 12) {
+    differenceInDay = year + " year";
+  }
+  console.log(differenceInDay);
 
   let projectPreviewCard = {
     projectName,
-    projectStart: differenceInDay + " Hari",
-    projectEnd: differenceInDay + " Hari",
+    differenceInDay,
     projectDescription,
     jsIconDecide,
     bootstrapIconDecide,
@@ -138,7 +154,7 @@ function renderPpc() {
       <a href="project-detail.html" style="color: black">
           <h4>${projectData[index].projectName}</h4>
       </a>
-      <p >${projectData[index].projectStart} - Rizal Herlangga</p>
+      <p >${projectData[index].differenceInDay} - Rizal Herlangga</p>
       <p class="deskripsi">${projectData[index].projectDescription}</p>
       <div class="gambar">
           ${projectData[index].jsIconDecide}
