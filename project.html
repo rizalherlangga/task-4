@@ -13,25 +13,34 @@
     />
   </head>
   <body>
-    <div class="bar">
-      <nav>
-        <div class="nav-left">
-          <a href="https://dumbways.id/" target="_blank">
-            <img src="assets/images/brandred.png" alt="dumbways" width="40px" />
-          </a>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="project.html">My Project</a>
-            </li>
+    <header>
+      <div>
+        <nav>
+          <img
+            src="assets/images/brandred.png"
+            alt="dubmways"
+            class="brand-image"
+            width="40px"
+          />
+          <ul class="nav-wrapper">
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="project.html">My Project</a></li>
           </ul>
-        </div>
-        <div class="nav-right">
+        </nav>
+        <button class="btn-contact item-collapse">
           <a href="contact.html">Contact Me</a>
+        </button>
+        <div class="barsmenu" id="barsmenu">
+          <button onclick="Collapse()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
-      </nav>
+      </div>
+    </header>
+    <div class="isi-collapse" id="isi-collapse">
+      <a href="index.html">HOME</a>
+      <a href="project.html">My Project</a>
+      <a href="contact.html">Contact Me</a>
     </div>
     <div class="project">
       <div class="project-form">
@@ -216,5 +225,6 @@
       </div>
     </div>
     <script src="js/project.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

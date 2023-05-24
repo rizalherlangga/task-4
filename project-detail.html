@@ -13,25 +13,34 @@
     <link rel="stylesheet" href="css/project-detail.css" />
   </head>
   <body>
-    <div class="bar">
-      <nav>
-        <div class="nav-left">
-          <a href="https://dumbways.id/" target="_blank">
-            <img src="assets/images/brandred.png" alt="dumbways" width="40px" />
-          </a>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="project.html">My Project</a>
-            </li>
+    <header>
+      <div>
+        <nav>
+          <img
+            src="assets/images/brandred.png"
+            alt="dubmways"
+            class="brand-image"
+            width="40px"
+          />
+          <ul class="nav-wrapper">
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="project.html">My Project</a></li>
           </ul>
-        </div>
-        <div class="nav-right">
+        </nav>
+        <button class="btn-contact item-collapse">
           <a href="contact.html">Contact Me</a>
+        </button>
+        <div class="barsmenu" id="barsmenu">
+          <button onclick="Collapse()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
-      </nav>
+      </div>
+    </header>
+    <div class="isi-collapse" id="isi-collapse">
+      <a href="index.html">HOME</a>
+      <a href="project.html">My Project</a>
+      <a href="contact.html">Contact Me</a>
     </div>
     <div class="container">
       <h1>Dumbways Web App</h1>
@@ -41,34 +50,38 @@
             <img src="assets/images/hp-gaming_.jpg" alt="hp" />
           </div>
           <div class="card-left">
-            <h6>Duration</h6>
-            <div class="date">
-              <i class="fa-solid fa-calculator"></i>
-              <p>12 Jan 2021 - 11 Feb 2021</p>
-            </div>
-            <div class="clock">
-              <i class="fa-regular fa-clock"></i>
-              <p>1 month</p>
-            </div>
-            <h6>Technologies</h6>
-            <div class="tc-1">
-              <div class="react">
-                <i class="fa-brands fa-react"></i>
-                <p>React Js</p>
+            <div class="left1">
+              <h6>Duration</h6>
+              <div class="date">
+                <i class="fa-solid fa-calculator"></i>
+                <p>12 Jan 2021 - 11 Feb 2021</p>
               </div>
-              <div class="node">
-                <i class="fa-brands fa-node-js"></i>
-                <p>Node Js</p>
+              <div class="clock">
+                <i class="fa-regular fa-clock"></i>
+                <p>1 month</p>
               </div>
             </div>
-            <div class="tc-2">
-              <div class="js">
-                <i class="fa-brands fa-square-js"></i>
-                <p>JavaScript</p>
+            <div class="left2">
+              <h6>Technologies</h6>
+              <div class="tc-1">
+                <div class="react">
+                  <i class="fa-brands fa-react"></i>
+                  <p>React Js</p>
+                </div>
+                <div class="node">
+                  <i class="fa-brands fa-node-js"></i>
+                  <p>Node Js</p>
+                </div>
               </div>
-              <div class="io">
-                <img src="assets/images/socket-dot-io.svg" alt="socket" />
-                <p>socket io</p>
+              <div class="tc-2">
+                <div class="js">
+                  <i class="fa-brands fa-square-js"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="io">
+                  <img src="assets/images/socket-dot-io.svg" alt="socket" />
+                  <p>socket io</p>
+                </div>
               </div>
             </div>
           </div>
@@ -173,5 +186,6 @@
         </div>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

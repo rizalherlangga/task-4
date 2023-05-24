@@ -7,27 +7,40 @@
     <title>Personal Web</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="bar">
-      <nav>
-        <div class="nav-left">
-          <a href="https://dumbways.id/" target="_blank">
-            <img src="assets/images/brandred.png" alt="dumbways" width="40px" />
-          </a>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="project.html" target="_blank">My Project</a>
-            </li>
+    <header>
+      <div>
+        <nav>
+          <img
+            src="assets/images/brandred.png"
+            alt="dubmways"
+            class="brand-image"
+            width="40px"
+          />
+          <ul class="nav-wrapper">
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="project.html">My Project</a></li>
           </ul>
-        </div>
-        <div class="nav-right">
+        </nav>
+        <button class="btn-contact item-collapse">
           <a href="contact.html">Contact Me</a>
+        </button>
+        <div class="barsmenu" id="barsmenu">
+          <button onclick="Collapse()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
         </div>
-      </nav>
+      </div>
+    </header>
+    <div class="isi-collapse" id="isi-collapse">
+      <a href="index.html">HOME</a>
+      <a href="project.html">My Project</a>
+      <a href="contact.html">Contact Me</a>
     </div>
     <div class="main">
       <div class="about">
@@ -79,5 +92,6 @@
         <p style="text-align: center; margin: 0">Backend Developer</p>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

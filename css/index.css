@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-  width: 1140px;
+  width: 1000px;
   margin: 50px auto;
   padding: 30px 50px;
   border-radius: 5px;
@@ -68,4 +68,90 @@ body {
 .card h2 {
   text-align: center;
   margin: 0 0 5px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+  .main {
+    width: 600px;
+    display: block;
+    padding: 30;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body {
+    width: 100%;
+  }
+  .main {
+    width: 450px;
+    display: block;
+    padding: 30px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .main {
+    width: 300px;
+    display: block;
+    padding: 20px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    width: 100%;
+  }
+  .main {
+    width: 250px;
+    display: block;
+    padding: 15;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
 }

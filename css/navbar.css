@@ -6,68 +6,104 @@
   margin: 0;
 }
 
-.bar {
-  width: 100%;
-  margin: 0;
-}
-nav {
-  width: 100%;
-  background-color: #f4f3f3;
-  display: flex;
-  align-items: center;
-  height: 80px;
-  justify-content: center;
-}
-
-.nav-right {
-  border-radius: 30px;
-  background-color: rgb(13, 9, 48);
-  padding: 5px 15px;
-}
-
-.nav-right:hover {
-  background-color: orangered;
-}
-.nav-right a {
-  color: white;
-  font-size: 15px;
-}
-
-.nav-left {
-  list-style-type: none;
-  margin-right: 930px;
-  display: flex;
-  align-items: center;
-}
-
-.nav-left ul {
-  display: flex;
-  margin-right: 20px;
-  padding-left: 40px;
-}
-.nav-left ul li {
-  list-style-type: none;
-  margin-right: 20px;
-}
-li a {
-  color: black;
-  font-weight: bold;
-}
-
-li a:hover {
-  color: orangered;
+li {
+  list-style: none;
 }
 
 button {
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
   background-color: rgb(8, 6, 34);
   color: white;
-  border-radius: 15px;
-  padding: 5px 15px;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
+}
+
+button a {
+  color: white;
 }
 
 button:hover {
   background-color: orangered;
+}
+
+body {
+  background-color: #e2e6ea;
+}
+
+header {
+  height: 64px;
+  background-color: #f4f3f3;
+  display: flex;
+  justify-content: center;
+  padding: 0 18px;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 1400px;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-wrapper {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.nav-wrapper a {
+  color: black;
+}
+
+.nav-wrapper a:hover {
+  color: orangered;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.isi-collapse {
+  font-size: 20px;
+  list-style: none;
+  width: 100%;
+  height: 120px;
+  background-color: #d3d3d3;
+  margin: 0;
+  padding-top: 15px;
+  display: none;
+}
+.isi-collapse a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.isi-collapse a:hover {
+  background-color: rgb(8, 6, 34);
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  #barsmenu {
+    display: block;
+  }
+
+  .item-collapse {
+    display: none;
+  }
 }
