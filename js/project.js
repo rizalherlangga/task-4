@@ -111,18 +111,15 @@ function postProject(event) {
   let month = Math.abs(Math.round(differenceInTime / (60 * 60 * 24 * 7 * 4)));
   let week = Math.abs(Math.round(differenceInTime / (60 * 60 * 24 * 7)));
   let days = Math.abs(Math.round(differenceInTime / (3600 * 24)));
-  let differenceInDay = { year, month, week, days };
+  let differenceInDay;
 
   if (days <= 7) {
     differenceInDay = days + " days";
-  }
-  if (days >= 8) {
+  } else if (days >= 8) {
     differenceInDay = week + " week";
-  }
-  if (week >= 4) {
+  } else if (week >= 4) {
     differenceInDay = month + " month";
-  }
-  if (month >= 12) {
+  } else if (month >= 12) {
     differenceInDay = year + " year";
   }
   console.log(differenceInDay);
