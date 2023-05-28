@@ -74,7 +74,7 @@ class CompanyTestimonials extends Testimonial {
 
 const testimonial1 = new AuthorTestimonials(
   "Rizal D Herlangga",
-  "Dunia itu biasa aja, yang gabisa dan menarik adalah nungguin ennding One Piece",
+  "Dunia itu biasa aja, yang gabisa dan menarik adalah nungguin ending One Piece",
   "https://w0.peakpx.com/wallpaper/427/950/HD-wallpaper-monkey-d-luffy-wide-smile-luffy-portrait.jpg"
 );
 const testimonial2 = new AuthorTestimonials(
