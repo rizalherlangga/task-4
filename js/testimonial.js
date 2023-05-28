@@ -110,13 +110,27 @@ const testimonialData = [
     author: "Uchiha Agus Kencana",
     quote: "Buatku wanita itu hanyalah sebuah genjutsu belaka",
     image: "https://wallpaperaccess.com/full/3541347.jpg",
-    rating: 4,
+    rating: 5,
   },
   {
     author: "Monkey D Marwan",
     quote: "Jika saya bereinkarnasi ... saya ingin menjadi kerang",
     image: "https://wallpapers.com/images/featured/0cp6bwz93q5udc63.jpg",
+    rating: 4,
+  },
+  {
+    author: "Ahmad Rojali",
+    quote: "kalo gue orang lu siape ... kodok ?",
+    image:
+      "https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg",
     rating: 3,
+  },
+  {
+    author: "Jamal Saiki",
+    quote: "Yo Ndak Iso !",
+    image:
+      "https://s3.eu-west-1.amazonaws.com/meme-dev/fd408731-22f5-489c-b3fe-b630350f85dc.jpg",
+    rating: 1,
   },
 ];
 
