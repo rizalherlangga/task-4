@@ -68,7 +68,7 @@ class CompanyTestimonials extends Testimonial {
   }
 
   get author() {
-    return this.#company + " Company";
+    return this.#company;
   }
 }
 
