@@ -73,18 +73,18 @@ class CompanyTestimonials extends Testimonial {
 }
 
 const testimonial1 = new AuthorTestimonials(
-  "Abel Dustin",
-  "Jagalah Kebersihan",
-  "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  "Rizal D Herlangga",
+  "Dunia itu biasa aja, yang gabisa dan menarik adalah nungguin ennding One Piece",
+  "https://w0.peakpx.com/wallpaper/427/950/HD-wallpaper-monkey-d-luffy-wide-smile-luffy-portrait.jpg"
 );
 const testimonial2 = new AuthorTestimonials(
-  "Cintara Surya",
+  "Bagas Anggara",
   "Keren cuys!!",
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
 );
 const testimonial3 = new CompanyTestimonials(
-  "Toyota",
-  "Desain Yang Mantap!! 🔥🔥🔥",
+  "Surya Angga",
+  "Beri Emot Api 3X (🔥🔥🔥)",
   "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
 );
 
